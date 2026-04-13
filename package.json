@@ -1,0 +1,17 @@
+{
+  "name": "discord-bet-ultimate",
+  "version": "1.1.0",
+  "description": "Bot cá cược bóng đá chuyên nghiệp với MongoDB và Hệ thống Handicap",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1",
+    "mongoose": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=16.x"
+  }
+}
