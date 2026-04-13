@@ -10,7 +10,7 @@ const client = new Client({
     intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent, GatewayIntentBits.DirectMessages]
 });
 
-const ADMIN_ROLE_ID = "ID_ROLE_ADMIN_CUA_BAN"; 
+const ADMIN_ROLE_ID = "1465374336214106237"; 
 
 // ==========================================
 // 1. CẤU TRÚC DATABASE (MONGODB)
