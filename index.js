@@ -1,3 +1,16 @@
+const http = require('http');
+
+// Đoạn này cực kỳ quan trọng để Render không báo lỗi Port
+http.createServer((req, res) => {
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.write("Bot is running!");
+    res.end();
+}).listen(process.env.PORT || 8080, () => {
+    console.log("✅ Cổng web đã được mở thành công!");
+});
+
+// Sau đó mới đến code Discord của bạn...
+
 const { 
     Client, GatewayIntentBits, ActionRowBuilder, ButtonBuilder, 
     ButtonStyle, EmbedBuilder, ModalBuilder, TextInputBuilder, 
